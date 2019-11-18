@@ -1,0 +1,17 @@
+Git SSH setup on Mac.
+
+Step 1: Generate SSH Private/Pubclic Key pair.
+	ssh-keygen -t rsa -b 4096 -C "githubemail@gmail.com"
+Step 2
+   	Command: eval "$(ssh-agent -s)"
+   	Agent pid 89904
+Step 3
+  Command: ssh-add -K id_rsa
+  you should see: Identity added: id_rsa (githumemail@gmail.com)
+  
+Setp 4: Copy and move it to github. 
+	Command: cat id_rsa.pub 
+
+Step 5: Test the connection 
+	Command: ssh -T git@github.com
+	you should see: Hi user! You've successfully authenticated, but GitHub does not provide shell access.
