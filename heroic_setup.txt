@@ -1,0 +1,14 @@
+Step 1: add your public key to Heroku
+
+	heroku keys:add
+		you should see : Uploading /Users/user/.ssh/id_rsa.pub SSH key... done
+
+Step 2: Create Heroku App
+	heroku create app-name
+
+Cowboy ~/Public/node/web-server 🏌️ $ git remote
+heroku
+origin
+
+
+$ git push heroku master
